@@ -16,3 +16,12 @@ If you have any questions or need further assistance, feel free to reach out via
 
 Happy mining!
 
+---
+
+## What is ProcessMind?
+
+**ProcessMind** is a cloud-based SaaS platform that unifies process mining, modeling, and simulation—making operational excellence accessible to every organization. Designed for SMBs and midmarket teams, ProcessMind eliminates the need for multiple tools and complex integrations. With intuitive no-code onboarding, transparent pricing, and instant access, users can map, mine, and simulate processes in one place, working with imperfect data and leveraging AI-powered modeling for clear, actionable insights.
+
+## What is Process Mining?
+
+**Process mining** is a technique that analyzes business process data to uncover how work actually happens. By extracting insights from system logs and data exports, process mining helps organizations visualize workflows, identify bottlenecks, and discover opportunities for improvement. It bridges the gap between business and IT, enabling data-driven decisions and continuous process optimization.
