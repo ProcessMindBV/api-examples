@@ -67,9 +67,9 @@ runWhenMain(import.meta.url, async () => {
 	console.log(`   ${email} (${user.id})`);
 
 	console.log("4. Loading a BPMN model…");
-	const process = await createProcess(client, tenant.id, "Order to cash");
-	await uploadBpmn(client, tenant.id, process.id, sampleBpmn);
-	console.log(`   Process ${process.id}`);
+	const createdProcess = await createProcess(client, tenant.id, "Order to cash");
+	await uploadBpmn(client, tenant.id, createdProcess.id, sampleBpmn);
+	console.log(`   Process ${createdProcess.id}`);
 
 	console.log("5. Loading data and mapping it to the model…");
 	const dataset = await createDataset(client, tenant.id, "Demo — event logs");
@@ -82,8 +82,8 @@ runWhenMain(import.meta.url, async () => {
 		content: sampleCsv,
 	});
 	await waitForDatatableReady(client, tenant.id, datatable.id);
-	const mapping = await mapDataToProcess(client, tenant.id, process.id, { dataTableId: datatable.id });
-	console.log(`   Datatable ${datatable.id} mapped to ${process.id} (mapping ${mapping.id})`);
+	const mapping = await mapDataToProcess(client, tenant.id, createdProcess.id, { dataTableId: datatable.id });
+	console.log(`   Datatable ${datatable.id} mapped to ${createdProcess.id} (mapping ${mapping.id})`);
 
 	console.log("6. Minting a one-time login link…");
 	const link = await mintLoginLink(client, tenant.id, user.id, "app");

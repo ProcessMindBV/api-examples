@@ -42,14 +42,14 @@ runWhenMain(import.meta.url, async () => {
 	const tenantId = process.argv[2] ?? contextTenantId();
 	const filePath = process.argv[3];
 
-	const process = await createProcess(client, tenantId, "Demo — Order to cash");
-	console.log(`Process created: ${process.displayName} (${process.id})`);
+	const created = await createProcess(client, tenantId, "Demo — Order to cash");
+	console.log(`Process created: ${created.displayName} (${created.id})`);
 
 	const bpmnXml = filePath ? await readFile(filePath, "utf8") : sampleBpmn;
-	await uploadBpmn(client, tenantId, process.id, bpmnXml);
+	await uploadBpmn(client, tenantId, created.id, bpmnXml);
 	console.log(filePath ? `Model uploaded from ${filePath}` : "Sample model uploaded");
 
-	const stored = await downloadBpmn(client, tenantId, process.id);
+	const stored = await downloadBpmn(client, tenantId, created.id);
 	console.log(`Model stored (${stored.bpmnXml.length} characters).`);
-	console.log(`Next: load data and map it — node javascript/load-data.mjs ${tenantId} ${process.id}`);
+	console.log(`Next: load data and map it — node javascript/load-data.mjs ${tenantId} ${created.id}`);
 });
