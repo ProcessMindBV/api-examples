@@ -242,7 +242,7 @@
             "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})$"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.414Z",
+            "default": "2026-11-02T06:11:39.945Z",
             "type": "string",
             "format": "date-time"
           },
@@ -355,7 +355,7 @@
             "maxLength": 128
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.417Z",
+            "default": "2026-11-02T06:11:39.979Z",
             "type": "string",
             "format": "date-time"
           },
@@ -436,7 +436,7 @@
             "maxLength": 64
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.388Z",
+            "default": "2026-11-02T06:11:39.925Z",
             "type": "string",
             "format": "date-time"
           },
@@ -540,7 +540,7 @@
             "maxLength": 64
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.388Z",
+            "default": "2026-11-02T06:11:39.925Z",
             "type": "string",
             "format": "date-time"
           },
@@ -7382,7 +7382,7 @@
             "type": "number"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.434Z",
+            "default": "2026-11-02T06:11:39.982Z",
             "type": "string",
             "format": "date-time"
           },
@@ -7448,7 +7448,7 @@
             "type": "boolean"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.495Z",
+            "default": "2026-11-02T06:11:40.005Z",
             "type": "string",
             "format": "date-time"
           }
@@ -7503,7 +7503,7 @@
             "type": "boolean"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.495Z",
+            "default": "2026-11-02T06:11:40.005Z",
             "type": "string",
             "format": "date-time"
           },
@@ -9148,7 +9148,7 @@
                 "type": "number"
               },
               "createdAt": {
-                "default": "2026-10-14T14:41:43.434Z",
+                "default": "2026-11-02T06:11:39.982Z",
                 "type": "string",
                 "format": "date-time"
               },
@@ -10188,7 +10188,14 @@
                       "it",
                       "nl",
                       "ja",
-                      "tr"
+                      "tr",
+                      "pl",
+                      "cs",
+                      "hu",
+                      "id",
+                      "ko",
+                      "vi",
+                      "th"
                     ]
                   }
                 },
