@@ -242,7 +242,7 @@
             "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})$"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.414Z",
+            "default": "2026-11-09T06:11:48.010Z",
             "type": "string",
             "format": "date-time"
           },
@@ -355,7 +355,7 @@
             "maxLength": 128
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.417Z",
+            "default": "2026-11-09T06:11:48.011Z",
             "type": "string",
             "format": "date-time"
           },
@@ -436,7 +436,7 @@
             "maxLength": 64
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.388Z",
+            "default": "2026-11-09T06:11:47.986Z",
             "type": "string",
             "format": "date-time"
           },
@@ -540,7 +540,7 @@
             "maxLength": 64
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.388Z",
+            "default": "2026-11-09T06:11:47.986Z",
             "type": "string",
             "format": "date-time"
           },
@@ -7349,7 +7349,13 @@
               "Xlsx",
               "Pptx",
               "Text",
-              "Video"
+              "Video",
+              "Visio",
+              "Audio",
+              "Odf",
+              "Email",
+              "Archive",
+              "Drawio"
             ]
           },
           "artifactType": {
@@ -7382,7 +7388,7 @@
             "type": "number"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.434Z",
+            "default": "2026-11-09T06:11:48.025Z",
             "type": "string",
             "format": "date-time"
           },
@@ -7448,7 +7454,7 @@
             "type": "boolean"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.495Z",
+            "default": "2026-11-09T06:11:48.065Z",
             "type": "string",
             "format": "date-time"
           }
@@ -7503,7 +7509,7 @@
             "type": "boolean"
           },
           "createdAt": {
-            "default": "2026-10-14T14:41:43.495Z",
+            "default": "2026-11-09T06:11:48.065Z",
             "type": "string",
             "format": "date-time"
           },
@@ -9115,7 +9121,13 @@
                   "Xlsx",
                   "Pptx",
                   "Text",
-                  "Video"
+                  "Video",
+                  "Visio",
+                  "Audio",
+                  "Odf",
+                  "Email",
+                  "Archive",
+                  "Drawio"
                 ]
               },
               "artifactType": {
@@ -9148,7 +9160,7 @@
                 "type": "number"
               },
               "createdAt": {
-                "default": "2026-10-14T14:41:43.434Z",
+                "default": "2026-11-09T06:11:48.025Z",
                 "type": "string",
                 "format": "date-time"
               },
@@ -10188,7 +10200,14 @@
                       "it",
                       "nl",
                       "ja",
-                      "tr"
+                      "tr",
+                      "pl",
+                      "cs",
+                      "hu",
+                      "id",
+                      "ko",
+                      "vi",
+                      "th"
                     ]
                   }
                 },
@@ -10977,6 +10996,9 @@
                 }
               }
             }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
           },
           "401": {
             "$ref": "#/components/responses/Unauthorized"
